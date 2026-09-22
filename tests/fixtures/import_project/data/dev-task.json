@@ -1,0 +1,21 @@
+{
+  "description": "Import Project 外部 backlog。LoopForge 每轮最多处理一个 item。",
+  "items": [
+    {
+      "acceptance": [
+        "项目出现在全部项目列表",
+        "选中新项目后任务管理展示该 item"
+      ],
+      "agent": "codex",
+      "created_at": "2026-06-30T00:00:00+00:00",
+      "description": "导入项目后，控制台应立即能从 data/dev-task.json 读取非终态 item。",
+      "id": "import-task-001",
+      "priority": "P2",
+      "source": "seed",
+      "status": "open",
+      "title": "导入后读取任务清单",
+      "updated_at": "2026-06-30T00:00:00+00:00"
+    }
+  ],
+  "version": 1
+}

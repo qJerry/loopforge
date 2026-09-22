@@ -1,0 +1,52 @@
+{
+  "projects": [
+    {
+      "id": "demo",
+      "name": "Demo Project",
+      "root_dir": "tests/fixtures/demo_project",
+      "enabled": true,
+      "schedule_enabled": true,
+      "schedule_frequency": "hourly",
+      "priority": 1,
+      "default_agent": "codex",
+      "executor": "fake_codex",
+      "auto_commit": false,
+      "notification_channel": "none",
+      "state_dir": "tests/fixtures/demo_project/.loopforge",
+      "report_dir": "tests/fixtures/demo_project/.loopforge/reports",
+      "schedule_started_at": "2026-07-01T00:00:00+00:00"
+    },
+    {
+      "id": "fake",
+      "name": "Fake Project",
+      "root_dir": "tests/fixtures/fake_project",
+      "enabled": true,
+      "schedule_enabled": true,
+      "schedule_frequency": "hourly",
+      "priority": 50,
+      "default_agent": "codex",
+      "executor": "fake_codex",
+      "auto_commit": false,
+      "notification_channel": "none",
+      "state_dir": "tests/fixtures/fake_project/.loopforge",
+      "report_dir": "tests/fixtures/fake_project/.loopforge/reports",
+      "schedule_started_at": "2026-07-01T00:00:00+00:00"
+    },
+    {
+      "id": "sample-go-service",
+      "name": "sample-go-service",
+      "root_dir": "tests/fixtures/sample_go_service",
+      "enabled": true,
+      "schedule_enabled": false,
+      "schedule_frequency": "hourly",
+      "priority": 100,
+      "default_agent": "codex",
+      "executor": "codex_cli",
+      "auto_commit": true,
+      "notification_channel": "none",
+      "state_dir": "tests/fixtures/sample_go_service/.loopforge",
+      "report_dir": "tests/fixtures/sample_go_service/.loopforge/reports",
+      "schedule_started_at": null
+    }
+  ]
+}

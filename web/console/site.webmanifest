@@ -1,0 +1,19 @@
+{
+  "name": "LoopForge 控制台",
+  "short_name": "LoopForge",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#10242e",
+  "background_color": "#f4f8f8",
+  "display": "standalone"
+}

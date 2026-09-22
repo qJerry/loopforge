@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "type": "flutter-app",
+  "label": "Flutter App 项目",
+  "fifth_doc": "DATA_CONTRACT.md",
+  "files": [
+    {"path": "AGENTS.md", "template": "flutter-app/AGENTS.md.tpl", "management": "agents"},
+    {"path": "agent_docs/ARCH.md", "template": "flutter-app/agent_docs/ARCH.md.tpl", "management": "seed"},
+    {"path": "agent_docs/BUILD.md", "template": "flutter-app/agent_docs/BUILD.md.tpl", "management": "seed"},
+    {"path": "agent_docs/TEST.md", "template": "flutter-app/agent_docs/TEST.md.tpl", "management": "seed"},
+    {"path": "agent_docs/DEV_TASK_EXECUTION.md", "template": "common/agent_docs/DEV_TASK_EXECUTION.md.tpl", "management": "contract"},
+    {"path": "agent_docs/DATA_CONTRACT.md", "template": "flutter-app/agent_docs/DATA_CONTRACT.md.tpl", "management": "seed"},
+    {"path": "scripts/flutter-env.sh", "template": "flutter-app/scripts/flutter-env.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/setup.sh", "template": "flutter-app/scripts/setup.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/format.sh", "template": "flutter-app/scripts/format.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/format-check.sh", "template": "flutter-app/scripts/format-check.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/lint.sh", "template": "flutter-app/scripts/lint.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/test.sh", "template": "flutter-app/scripts/test.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/build.sh", "template": "flutter-app/scripts/build.sh.tpl", "management": "managed", "executable": true}
+  ]
+}

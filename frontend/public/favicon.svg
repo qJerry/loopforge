@@ -1,0 +1,20 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>LoopForge</title>
+  <defs>
+    <linearGradient id="bg" x1="10" y1="7" x2="54" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10242E"/>
+      <stop offset="1" stop-color="#0E1B28"/>
+    </linearGradient>
+    <linearGradient id="loop" x1="18" y1="20" x2="48" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4EF2CB"/>
+      <stop offset="1" stop-color="#14B6D4"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <rect x="18" y="20" width="30" height="20" rx="5" transform="rotate(-6 18 20)" fill="#D7E5E5" opacity="0.6"/>
+  <rect x="15" y="24" width="34" height="22" rx="6" fill="#F6FBF9"/>
+  <path d="M21 33C21 25.5 27.4 20.5 35 22C40.6 23.1 44.8 27.1 46 32.3" stroke="url(#loop)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M44 25.5L50 32.2L41.6 34.2L44 25.5Z" fill="#18BED0"/>
+  <path d="M42.5 35C42.5 42.2 36.3 47.1 29 45.7C23.7 44.7 19.6 40.8 18.3 35.9" stroke="#F5C84C" stroke-width="6" stroke-linecap="round"/>
+  <path d="M20.4 42.7L14.5 35.9L22.8 34L20.4 42.7Z" fill="#F5C84C"/>
+</svg>

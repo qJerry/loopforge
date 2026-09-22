@@ -1,0 +1,11 @@
+bin/
+.tools/
+.loopforge/*
+!.loopforge/project.json
+coverage.out
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+.DS_Store

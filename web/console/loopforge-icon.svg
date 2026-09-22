@@ -1,0 +1,36 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>LoopForge</title>
+  <defs>
+    <linearGradient id="loopforge-bg" x1="88" y1="72" x2="422" y2="440" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10242E"/>
+      <stop offset="0.55" stop-color="#17323A"/>
+      <stop offset="1" stop-color="#0E1B28"/>
+    </linearGradient>
+    <linearGradient id="loopforge-card" x1="156" y1="144" x2="358" y2="364" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FCFA"/>
+      <stop offset="1" stop-color="#DAE8E8"/>
+    </linearGradient>
+    <linearGradient id="loopforge-teal" x1="146" y1="162" x2="392" y2="316" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4EF2CB"/>
+      <stop offset="1" stop-color="#14B6D4"/>
+    </linearGradient>
+    <filter id="loopforge-shadow" x="84" y="106" width="344" height="312" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="22" stdDeviation="18" flood-color="#050B12" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#loopforge-bg)"/>
+  <circle cx="388" cy="132" r="28" fill="#F5C84C"/>
+  <circle cx="104" cy="382" r="16" fill="#49D6B6" opacity="0.72"/>
+  <g filter="url(#loopforge-shadow)">
+    <rect x="130" y="145" width="244" height="156" rx="30" transform="rotate(-8 130 145)" fill="#C9D8DB" opacity="0.62"/>
+    <rect x="116" y="184" width="268" height="164" rx="32" transform="rotate(-2.5 116 184)" fill="#E7F0EF" opacity="0.9"/>
+    <rect x="132" y="214" width="260" height="164" rx="34" fill="url(#loopforge-card)"/>
+    <rect x="162" y="250" width="130" height="16" rx="8" fill="#17323A" opacity="0.18"/>
+    <rect x="162" y="284" width="190" height="16" rx="8" fill="#17323A" opacity="0.12"/>
+    <rect x="162" y="318" width="116" height="16" rx="8" fill="#17323A" opacity="0.1"/>
+  </g>
+  <path d="M178 278C178 218 229 177 289 188C334 196 366 228 376 270" stroke="url(#loopforge-teal)" stroke-width="30" stroke-linecap="round"/>
+  <path d="M360 232L407 281L343 295L360 232Z" fill="#17BFD0"/>
+  <path d="M334 292C334 350 286 388 228 376C184 367 154 335 144 294" stroke="#F5C84C" stroke-width="30" stroke-linecap="round"/>
+  <path d="M160 332L119 284L181 269L160 332Z" fill="#F5C84C"/>
+</svg>

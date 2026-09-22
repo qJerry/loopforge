@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1260 620" width="1260" height="620" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+  <title>Anatomy of one LoopForge tick</title>
+  <desc>Eight stages: tick, lock, task, worktree, prompt, agent, result, record.</desc>
+
+  <style>
+    :root {
+      --bg:        #ffffff;
+      --card:      #ffffff;
+      --card-edge: #d5dbe2;
+      --text:      #14181d;
+      --muted:     #62707f;
+      --faint:     #8b98a7;
+      --wire:      #c2ccd7;
+      --accent:    #6d4aff;
+      --accent-sf: #f1edff;
+      --accent-ed: #cfc2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:        #0d1117;
+        --card:      #171d26;
+        --card-edge: #2d3947;
+        --text:      #e8eef5;
+        --muted:     #9aa8b8;
+        --faint:     #6f7f91;
+        --wire:      #38434f;
+        --accent:    #a68bff;
+        --accent-sf: #1c1830;
+        --accent-ed: #443a6e;
+      }
+    }
+    .node   { fill: var(--card); stroke: var(--card-edge); stroke-width: 1.4; }
+    .num    { fill: var(--accent); font-size: 15px; font-weight: 700; }
+    .ttl    { fill: var(--text); font-size: 15px; font-weight: 650; }
+    .dsc    { fill: var(--muted); font-size: 12.5px; }
+    .arc    { stroke: var(--wire); fill: none; stroke-width: 2; stroke-linecap: round; }
+    .head   { fill: var(--wire); }
+    .core   { fill: var(--text); font-size: 15px; font-weight: 650; }
+    .core-s { fill: var(--muted); font-size: 12.5px; }
+    .kicker { fill: var(--faint); font-size: 11px; font-weight: 700; letter-spacing: 1.4px; }
+  </style>
+
+  <defs>
+    <marker id="h" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="head"/>
+    </marker>
+  </defs>
+
+  <rect width="1260" height="620" fill="var(--bg)"/>
+  <text x="40" y="44" class="kicker">ANATOMY OF ONE TICK</text>
+
+  <!-- arcs -->
+  <path d="M665.3 133.7 A 170 170 0 0 1 722.6 157.4" class="arc" marker-end="url(#h)"/>
+  <path d="M772.6 207.4 A 170 170 0 0 1 796.3 264.7" class="arc" marker-end="url(#h)"/>
+  <path d="M796.3 335.3 A 170 170 0 0 1 772.6 392.6" class="arc" marker-end="url(#h)"/>
+  <path d="M722.6 442.6 A 170 170 0 0 1 665.3 466.3" class="arc" marker-end="url(#h)"/>
+  <path d="M594.7 466.3 A 170 170 0 0 1 537.4 442.6" class="arc" marker-end="url(#h)"/>
+  <path d="M487.4 392.6 A 170 170 0 0 1 463.7 335.3" class="arc" marker-end="url(#h)"/>
+  <path d="M463.7 264.7 A 170 170 0 0 1 487.4 207.4" class="arc" marker-end="url(#h)"/>
+  <path d="M537.4 157.4 A 170 170 0 0 1 594.7 133.7" class="arc" marker-end="url(#h)"/>
+
+  <!-- centre -->
+  <circle cx="630" cy="300" r="104" fill="var(--accent-sf)" stroke="var(--accent-ed)" stroke-width="1.2"/>
+  <text x="630" y="286" text-anchor="middle" class="core">one tick</text>
+  <text x="630" y="308" text-anchor="middle" class="core-s">advances exactly one project</text>
+  <text x="630" y="326" text-anchor="middle" class="core-s">by exactly one step</text>
+
+  <!-- 1 · top -->
+  <circle cx="630" cy="130" r="26" class="node"/>
+  <text x="630" y="136" text-anchor="middle" class="num">1</text>
+  <text x="630" y="72" text-anchor="middle" class="ttl">Tick</text>
+  <text x="630" y="90" text-anchor="middle" class="dsc">the scheduler picks one eligible project</text>
+
+  <!-- 2 -->
+  <circle cx="750.2" cy="179.8" r="26" class="node"/>
+  <text x="750.2" y="185.8" text-anchor="middle" class="num">2</text>
+  <text x="790" y="171" class="ttl">Lock</text>
+  <text x="790" y="189" class="dsc">a project lock claims the repo — no double drive</text>
+
+  <!-- 3 -->
+  <circle cx="800" cy="300" r="26" class="node"/>
+  <text x="800" y="306" text-anchor="middle" class="num">3</text>
+  <text x="844" y="292" class="ttl">Task</text>
+  <text x="844" y="310" class="dsc">the next task is read from the JSON ledger</text>
+
+  <!-- 4 -->
+  <circle cx="750.2" cy="420.2" r="26" class="node"/>
+  <text x="750.2" y="426.2" text-anchor="middle" class="num">4</text>
+  <text x="790" y="412" class="ttl">Worktree</text>
+  <text x="790" y="430" class="dsc">a managed branch and an isolated checkout</text>
+
+  <!-- 5 · bottom -->
+  <circle cx="630" cy="470" r="26" class="node"/>
+  <text x="630" y="476" text-anchor="middle" class="num">5</text>
+  <text x="630" y="528" text-anchor="middle" class="ttl">Prompt</text>
+  <text x="630" y="546" text-anchor="middle" class="dsc">task, acceptance, prior runs and blockers, assembled</text>
+
+  <!-- 6 -->
+  <circle cx="509.8" cy="420.2" r="26" class="node"/>
+  <text x="509.8" y="426.2" text-anchor="middle" class="num">6</text>
+  <text x="470" y="412" text-anchor="end" class="ttl">Agent</text>
+  <text x="470" y="430" text-anchor="end" class="dsc">Claude Code or Codex runs headless, detached</text>
+
+  <!-- 7 -->
+  <circle cx="460" cy="300" r="26" class="node"/>
+  <text x="460" y="306" text-anchor="middle" class="num">7</text>
+  <text x="416" y="292" text-anchor="end" class="ttl">Result</text>
+  <text x="416" y="310" text-anchor="end" class="dsc">a structured worker-result.json, never prose</text>
+
+  <!-- 8 -->
+  <circle cx="509.8" cy="179.8" r="26" class="node"/>
+  <text x="509.8" y="185.8" text-anchor="middle" class="num">8</text>
+  <text x="470" y="171" text-anchor="end" class="ttl">Record</text>
+  <text x="470" y="189" text-anchor="end" class="dsc">state, run, event, cost — then notify and unlock</text>
+</svg>

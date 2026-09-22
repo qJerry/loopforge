@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "type": "go-backend",
+  "label": "Go 后端项目",
+  "fifth_doc": "DATA_ENGINEERING.md",
+  "dependency_contract": {
+    "path": "go.mod",
+    "kind": "go-mod",
+    "requires": {
+      "github.com/gin-gonic/gin": "v1.11.0",
+      "gorm.io/gorm": "v1.31.1",
+      "gorm.io/driver/mysql": "v1.5.7",
+      "gorm.io/gen": "v0.3.28"
+    }
+  },
+  "files": [
+    {"path": ".gitignore", "template": "go-backend/gitignore.tpl", "management": "seed"},
+    {"path": ".golangci.yml", "template": "go-backend/golangci.yml.tpl", "management": "seed"},
+    {"path": "AGENTS.md", "template": "go-backend/AGENTS.md.tpl", "management": "agents"},
+    {"path": "agent_docs/ARCH.md", "template": "go-backend/agent_docs/ARCH.md.tpl", "management": "seed"},
+    {"path": "agent_docs/BUILD.md", "template": "go-backend/agent_docs/BUILD.md.tpl", "management": "seed"},
+    {"path": "agent_docs/TEST.md", "template": "go-backend/agent_docs/TEST.md.tpl", "management": "seed"},
+    {"path": "agent_docs/DEV_TASK_EXECUTION.md", "template": "common/agent_docs/DEV_TASK_EXECUTION.md.tpl", "management": "contract"},
+    {"path": "agent_docs/DATA_ENGINEERING.md", "template": "go-backend/agent_docs/DATA_ENGINEERING.md.tpl", "management": "seed"},
+    {"path": "scripts/go-env.sh", "template": "go-backend/scripts/go-env.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/tool-env.sh", "template": "go-backend/scripts/tool-env.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/setup-tools.sh", "template": "go-backend/scripts/setup-tools.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/setup.sh", "template": "go-backend/scripts/setup.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/format.sh", "template": "go-backend/scripts/format.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/format-check.sh", "template": "go-backend/scripts/format-check.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/lint.sh", "template": "go-backend/scripts/lint.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/test.sh", "template": "go-backend/scripts/test.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/build.sh", "template": "go-backend/scripts/build.sh.tpl", "management": "managed", "executable": true}
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "projects": [
+    {
+      "id": "example-project",
+      "name": "Example Project",
+      "root_dir": "/absolute/path/to/project",
+      "enabled": true,
+      "schedule_enabled": false,
+      "schedule_frequency": "hourly",
+      "priority": 10,
+      "default_agent": "codex",
+      "executor": "codex_cli",
+      "codex_model": "gpt-5-codex",
+      "codex_reasoning_effort": "high",
+      "codex_sandbox": "workspace-write",
+      "auto_commit": true,
+      "worktree_managed": true,
+      "planning_adapter": "builtin",
+      "notification_channel": "none",
+      "state_dir": "/absolute/path/to/project/.loopforge",
+      "report_dir": "/absolute/path/to/project/.loopforge/reports"
+    }
+  ]
+}

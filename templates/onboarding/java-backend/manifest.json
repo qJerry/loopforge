@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "type": "java-backend",
+  "label": "Java 后端项目",
+  "fifth_doc": "DATA_ENGINEERING.md",
+  "files": [
+    {"path": "AGENTS.md", "template": "java-backend/AGENTS.md.tpl", "management": "agents"},
+    {"path": "agent_docs/ARCH.md", "template": "java-backend/agent_docs/ARCH.md.tpl", "management": "seed"},
+    {"path": "agent_docs/BUILD.md", "template": "java-backend/agent_docs/BUILD.md.tpl", "management": "seed"},
+    {"path": "agent_docs/TEST.md", "template": "java-backend/agent_docs/TEST.md.tpl", "management": "seed"},
+    {"path": "agent_docs/DEV_TASK_EXECUTION.md", "template": "common/agent_docs/DEV_TASK_EXECUTION.md.tpl", "management": "contract"},
+    {"path": "agent_docs/DATA_ENGINEERING.md", "template": "java-backend/agent_docs/DATA_ENGINEERING.md.tpl", "management": "seed"},
+    {"path": "scripts/java-env.sh", "template": "java-backend/scripts/java-env.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/build-tool.sh", "template": "java-backend/scripts/build-tool.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/format.sh", "template": "java-backend/scripts/format.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/format-check.sh", "template": "java-backend/scripts/format-check.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/lint.sh", "template": "java-backend/scripts/lint.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/test.sh", "template": "java-backend/scripts/test.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/build.sh", "template": "java-backend/scripts/build.sh.tpl", "management": "managed", "executable": true}
+  ]
+}

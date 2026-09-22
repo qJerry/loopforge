@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "type": "python-scripts",
+  "label": "Python 脚本项目",
+  "fifth_doc": "SCRIPT_ENGINEERING.md",
+  "files": [
+    {"path": "AGENTS.md", "template": "python-scripts/AGENTS.md.tpl", "management": "agents"},
+    {"path": "agent_docs/ARCH.md", "template": "python-scripts/agent_docs/ARCH.md.tpl", "management": "seed"},
+    {"path": "agent_docs/BUILD.md", "template": "python-scripts/agent_docs/BUILD.md.tpl", "management": "seed"},
+    {"path": "agent_docs/TEST.md", "template": "python-scripts/agent_docs/TEST.md.tpl", "management": "seed"},
+    {"path": "agent_docs/DEV_TASK_EXECUTION.md", "template": "common/agent_docs/DEV_TASK_EXECUTION.md.tpl", "management": "contract"},
+    {"path": "agent_docs/SCRIPT_ENGINEERING.md", "template": "python-scripts/agent_docs/SCRIPT_ENGINEERING.md.tpl", "management": "seed"},
+    {"path": "scripts/python-env.sh", "template": "python-scripts/scripts/python-env.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/setup-tools.sh", "template": "python-scripts/scripts/setup-tools.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/format.sh", "template": "python-scripts/scripts/format.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/format-check.sh", "template": "python-scripts/scripts/format-check.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/lint.sh", "template": "python-scripts/scripts/lint.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/test.sh", "template": "python-scripts/scripts/test.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/build.sh", "template": "python-scripts/scripts/build.sh.tpl", "management": "managed", "executable": true}
+  ]
+}

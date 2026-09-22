@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "project_type": "go-backend",
+  "bdd": {
+    "command": ["scripts/test.sh", "bdd"],
+    "feature_glob": "bdd/features/**/*.feature",
+    "runner": "godog"
+  }
+}

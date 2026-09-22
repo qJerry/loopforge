@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "type": "project-group",
+  "label": "多仓项目组",
+  "fifth_doc": "PROJECT_GROUP.md",
+  "files": [
+    {"path": "AGENTS.md", "template": "project-group/AGENTS.md.tpl", "management": "agents"},
+    {"path": "agent_docs/ARCH.md", "template": "project-group/agent_docs/ARCH.md.tpl", "management": "seed"},
+    {"path": "agent_docs/BUILD.md", "template": "project-group/agent_docs/BUILD.md.tpl", "management": "seed"},
+    {"path": "agent_docs/TEST.md", "template": "project-group/agent_docs/TEST.md.tpl", "management": "seed"},
+    {"path": "agent_docs/DEV_TASK_EXECUTION.md", "template": "common/agent_docs/DEV_TASK_EXECUTION.md.tpl", "management": "contract"},
+    {"path": "agent_docs/PROJECT_GROUP.md", "template": "project-group/agent_docs/PROJECT_GROUP.md.tpl", "management": "seed"},
+    {"path": "scripts/format.sh", "template": "project-group/scripts/format.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/format-check.sh", "template": "project-group/scripts/format-check.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/lint.sh", "template": "project-group/scripts/lint.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/test.sh", "template": "project-group/scripts/test.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/build.sh", "template": "project-group/scripts/build.sh.tpl", "management": "managed", "executable": true}
+  ]
+}

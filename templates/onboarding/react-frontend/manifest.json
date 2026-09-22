@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "type": "react-frontend",
+  "label": "React 前端项目",
+  "fifth_doc": "DATA_CONTRACT.md",
+  "dependency_contract": {
+    "path": "package.json",
+    "kind": "package-json",
+    "dependencies": {
+      "react": "^18.3.1",
+      "react-dom": "^18.3.1",
+      "@umijs/max": "^4.4.12",
+      "antd": "^5.24.7",
+      "@ant-design/pro-components": "^2.8.6"
+    },
+    "devDependencies": {
+      "ws": "^8.21.0"
+    }
+  },
+  "files": [
+    {"path": "AGENTS.md", "template": "react-frontend/AGENTS.md.tpl", "management": "agents"},
+    {"path": "agent_docs/ARCH.md", "template": "react-frontend/agent_docs/ARCH.md.tpl", "management": "seed"},
+    {"path": "agent_docs/BUILD.md", "template": "react-frontend/agent_docs/BUILD.md.tpl", "management": "seed"},
+    {"path": "agent_docs/TEST.md", "template": "react-frontend/agent_docs/TEST.md.tpl", "management": "seed"},
+    {"path": "agent_docs/DEV_TASK_EXECUTION.md", "template": "common/agent_docs/DEV_TASK_EXECUTION.md.tpl", "management": "contract"},
+    {"path": "agent_docs/DATA_CONTRACT.md", "template": "react-frontend/agent_docs/DATA_CONTRACT.md.tpl", "management": "seed"},
+    {"path": "scripts/package-manager.sh", "template": "react-frontend/scripts/package-manager.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/setup.sh", "template": "react-frontend/scripts/setup.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/format.sh", "template": "react-frontend/scripts/format.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/format-check.sh", "template": "react-frontend/scripts/format-check.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/lint.sh", "template": "react-frontend/scripts/lint.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/test.sh", "template": "react-frontend/scripts/test.sh.tpl", "management": "managed", "executable": true},
+    {"path": "scripts/build.sh", "template": "react-frontend/scripts/build.sh.tpl", "management": "managed", "executable": true}
+  ]
+}

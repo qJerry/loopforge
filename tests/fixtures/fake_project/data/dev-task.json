@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "description": "Fake Project 外部 backlog。LoopForge 每轮最多处理一个 item。",
+  "items": [
+    {
+      "id": "fake-task-001",
+      "title": "Fake 项目任务",
+      "description": "Fake backlog item：Fake 项目任务",
+      "status": "open",
+      "priority": "P2",
+      "source": "seed",
+      "agent": "codex",
+      "acceptance": [
+        "进入任务队列",
+        "可被调度执行",
+        "运行历史可观察"
+      ],
+      "created_at": "2026-06-30T00:00:00+00:00",
+      "updated_at": "2026-06-30T00:00:00+00:00"
+    }
+  ]
+}

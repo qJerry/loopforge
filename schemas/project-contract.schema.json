@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LoopForge repository project contract",
+  "type": "object",
+  "required": ["schema_version", "project_type"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "project_type": { "type": "string", "minLength": 1 }
+  },
+  "additionalProperties": false
+}

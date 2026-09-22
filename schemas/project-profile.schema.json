@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LoopForge projects config",
+  "type": "object",
+  "required": ["projects"],
+  "properties": {
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "root_dir"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "name": { "type": "string", "minLength": 1 },
+          "root_dir": { "type": "string", "minLength": 1 },
+          "enabled": { "type": "boolean" },
+          "schedule_enabled": { "type": "boolean" },
+          "schedule_frequency": { "enum": ["half_hourly", "hourly", "daily", "weekly"] },
+          "schedule_started_at": { "type": ["string", "null"] },
+          "priority": { "type": "integer" },
+          "default_agent": { "type": "string", "minLength": 1 },
+          "executor": { "enum": ["codex_cli", "fake_codex"] },
+          "codex_model": { "type": "string", "minLength": 1 },
+          "codex_reasoning_effort": { "enum": ["low", "medium", "high", "xhigh"] },
+          "codex_sandbox": { "enum": ["read-only", "workspace-write", "danger-full-access"] },
+          "auto_commit": { "type": "boolean" },
+          "worktree_managed": { "type": "boolean" },
+          "project_type": {
+            "enum": ["project-group", "go-backend", "react-frontend", "flutter-app", "python-scripts"]
+          },
+          "planning_adapter": { "enum": ["builtin", "openspec"] },
+          "project_group": {
+            "type": "object",
+            "properties": {
+              "key": { "type": "string", "minLength": 1 },
+              "children": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["key", "path"],
+                  "properties": {
+                    "key": { "type": "string", "minLength": 1 },
+                    "path": { "type": "string", "minLength": 1 },
+                    "project_type": { "type": "string", "minLength": 1 }
+                  },
+                  "additionalProperties": true
+                }
+              }
+            },
+            "additionalProperties": true
+          },
+          "notification_channel": { "enum": ["none", "wecom_robot"] },
+          "webhook_env": { "type": "string" },
+          "webhook_url": { "type": "string" },
+          "state_dir": { "type": "string" },
+          "report_dir": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}
