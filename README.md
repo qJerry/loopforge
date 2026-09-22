@@ -2,7 +2,7 @@
 
 # LoopForge
 
-**A local control plane for long-running coding agents.**
+**An AI-driven engineering delivery platform for long-running coding agents.**
 
 Register your repositories once. LoopForge decides *which* project an agent works on next,
 runs it in an isolated git worktree, records every run, and hands you the diff.
@@ -52,7 +52,7 @@ Everything else — planning, code quality, taste — stays where it belongs: in
 
 ![LoopForge architecture](docs/architecture.svg)
 
-The control plane is **~7k lines of dependency-free Python**. The console is a single React bundle
+The platform's core is **~7k lines of dependency-free Python**. The console is a single React bundle
 served by that same process. There is no database, no broker, no daemon to install: state is JSON
 files inside the repositories you already have.
 

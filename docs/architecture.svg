@@ -82,7 +82,7 @@
     <path d="M7 -5 a6 6 0 1 1 6 6" stroke="var(--accent)" stroke-width="2" fill="none" stroke-linecap="round"/>
     <circle cx="13" cy="1" r="2" fill="var(--accent)"/>
     <text x="38" y="2" class="brand">LoopForge</text>
-    <text x="150" y="2" class="brand-sub">local control plane for long-running coding agents</text>
+    <text x="150" y="2" class="brand-sub">AI-driven engineering delivery platform for long-running coding agents</text>
   </g>
   <line x1="40" y1="66" x2="1160" y2="66" stroke="var(--lane-edge)" stroke-width="1"/>
 

@@ -405,7 +405,7 @@ def dashboard(config_path: Optional[Path]) -> Dict[str, Any]:
         projects.append(project)
     return result(
         "completed",
-        "控制面状态已刷新",
+        "平台状态已刷新",
         summary_counts=counts,
         generated_at=utc_now(),
         issues=issues,

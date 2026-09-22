@@ -1,4 +1,4 @@
-"""LoopForge 本地多项目 Loop Engineering 控制面。"""
+"""LoopForge：AI 驱动的多项目工程交付平台。"""
 
 __all__ = ["__version__"]
 

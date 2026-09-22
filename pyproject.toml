@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "loopforge"
 version = "0.1.0"
-description = "Local control plane for long-running coding agents across many git repositories"
+description = "AI-driven engineering delivery platform for long-running coding agents across many git repositories"
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
@@ -18,7 +18,7 @@ classifiers = [
   "Programming Language :: Python :: 3",
   "Topic :: Software Development :: Build Tools",
 ]
-# LoopForge deliberately has zero runtime dependencies — the whole control plane
+# LoopForge deliberately has zero runtime dependencies — the whole platform
 # is standard library only. The agents it drives are external CLIs.
 dependencies = []
 

@@ -2,7 +2,7 @@
 
 # LoopForge
 
-**面向长时运行编码 Agent 的本地控制面。**
+**面向长时运行编码 Agent 的 AI 驱动工程交付平台。**
 
 注册一次仓库，之后由 LoopForge 决定下一步该让 Agent 推进哪个项目、
 在独立的 git worktree 里执行、完整记录每一轮运行，最后把 diff 交给你。
@@ -50,7 +50,7 @@ LoopForge 是一层小而无趣的本地基础设施，位于**你和你已经�
 
 ![LoopForge 架构](docs/architecture.svg)
 
-控制面是 **约 7k 行零依赖 Python**，控制台是由同一个进程托管的单个 React 产物。
+平台核心是 **约 7k 行零依赖 Python**，控制台是由同一个进程托管的单个 React 产物。
 没有数据库、没有消息队列、没有需要安装的守护进程：状态就是你现有仓库里的 JSON 文件。
 
 ## 一次 tick 的全过程
